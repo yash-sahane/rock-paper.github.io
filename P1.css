@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #1B1A17;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 5%;
+}
+
+.choice {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.resetBtn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.choiceimg {
+    font-size: 40px;
+    background-color: #E45826;
+    border-radius: 10px;
+}
+
+.result {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.bothChoices {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.gameinfo,
+#mChoice,
+#hChoice {
+    margin-top: 10px;
+}
+
+.hchoice,
+.mchoice {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.humanComputerPoints {
+    width: 400px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.pointTableContainer {
+    display: flex;
+}
+
+.bothPoints,
+.pointTable {
+    width: 200px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.pointsLabel,
+.hPoints,
+.mPoints {
+    padding: 5px;
+}
+
+.choiceimg {
+    transition: .25s;
+}
+
+#resetBtn {
+    height: 30px;
+    width: 60px;
+    background-color: #ee6b3c;
+    border-radius: 5px;
+    color: black;
+}
+
+.rock {}
+
+.paper {}
+
+.scissor {}

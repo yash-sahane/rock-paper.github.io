@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="P1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="humanComputerPoints">
+            <h2>Points Table</h2>
+            <div class="pointTableContainer">
+                <div class="bothPoints">
+                    <p class="pointsLabel">Your Points</p>
+                    <p class="hPoints" id="hPoints">0</p>
+                </div>
+                <div class="pointTable">
+                    <p class="pointsLabel">Computer Points</p>
+                    <p class="mPoints" id="mPoints">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="OptionsContainer">
+            <div class="choices">
+                <button class="rock choice" value='Rock'>
+                    <p class="choiceimg" id="choiceImg1">✊</p>
+                </button>
+                <button class="paper choice" value='Paper'>
+                    <p class="choiceimg">🖐️</p>
+                </button>
+                <button class="scissor choice" value='Scissor'>
+                    <p class="choiceimg">✌️</p>
+                </button>
+            </div>
+            <div class="bothChoices">
+                <p class="hchoice">Your Choice<i class="fa-solid fa-arrow-down-long"></i><span id="hChoice"></span>
+                </p>
+                <p class="mchoice">Computer Choice <i class="fa-solid fa-arrow-down-long"></i><span id="mChoice"></span>
+                </p>
+            </div>
+            <div class="gameinfo">
+                <p class="result" id="result">
+                </p>
+            </div>
+            <div class="resetBtn">
+                <button id="resetBtn" onmousedown="mouseDown()" onmouseup="mouseUp()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="main_script.js"></script>
+
+</body>
+
+</html>
